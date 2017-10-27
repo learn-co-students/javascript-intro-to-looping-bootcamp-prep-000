@@ -1,0 +1,32 @@
+function forLoop(array) {
+for(var i=0; i < 25; i++) {
+  if(i===1) {
+    array.push(["I am 1 strange loop."])
+  }
+  else {
+    var iString = i.toString();
+    array.push([`I am ${iString} strange loops.`])
+  }
+}
+return array;
+}
+forLoop([]);
+
+function whileLoop(number) {
+  while(number>0) {
+    console.log(number);
+    number--;
+  }
+  return "done";
+}
+
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
+
+function doWhileLoop(array) {
+  do {
+    array.pop();
+  } while(maybeTrue() && array!==[]);
+return array;
+}
