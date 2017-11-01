@@ -31,7 +31,7 @@ describe('loops', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
 
-      expect(strangeArray.length).to.equal(t + 25)
+      expect(strangeArray.length).to.equal(25)
 
       const testArray = strangeArray.slice(array.length)
 
