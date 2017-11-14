@@ -1,26 +1,30 @@
-function forLoop (array) {
-  for(i=1; i<26; i++) {
-    var helloRay = []
+function forLoop(array) {
+  for (let i = 0; i < 25; i++) {
     if (i === 1) {
-      helloRay.unshift('I am 1 strange loop')
+      array.push("I am 1 strange loop.")
     }
-    else {
-      helloRay.push(`I am ${i} strange loops`)
+      else {
+       array.push(`I am ${i} strange loops.`)
     }
   }
+  return array
 }
-function whileLoop(num) {
-  while (num > 0) {
-    console.log(num)
-    num--;
+
+function whileLoop(n) {
+  while (n > 0) {
+  console.log(n--)
   }
+  return "done"
 }
+
 function maybeTrue() {
   return Math.random() >= 0.5
 }
-function doWhileLoop(array) {
+
+function doWhileLoop(array) { 
   do {
-    array.pop()
-  }
-  while (maybeTrue());
+  array.pop()
+}
+while (maybeTrue() && array.length > 0)
+return array
 }
