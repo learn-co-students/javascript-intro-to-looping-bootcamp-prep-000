@@ -1,19 +1,23 @@
 function forLoop(array) {
-  for(let i=1; i <25; i++){
+  for(let i=0; i < 26; i++){
     if(i === 1){
-    console.log("I am a 1 strange loop");
+    array.push("I am a 1 strange loop.");
   } else {
-    console.log(`I am a ${i} strange loops`);
+    array.push(`I am ${i} strange loops.`);
     }
+    return array.length;
   }
 }
 
 function whileLoop(n) {
-    while() {
+  //  while() {
 
-    }
+  //  }
 }
 
 function doWhileLoop(array) {
+    while (maybeTrue()) {
 
+
+  }
 }
