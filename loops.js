@@ -1,12 +1,15 @@
-function forLoop (array) {
-  for (let i = 0; i < 25; i++) {
 
-    if (i === 0) {
-      array[i] = `"I am a strange loop"`;
+
+function forLoop (array) {
+
+  for (let i = 1; i < 26; i++) {
+
+    if (i === 1) {
+      array[i-1] = `"I am ${i} strange loop"`;
     }
 
-    else if ((0 < i) && (i < 25)) {
-      array[i] = `"I am ${i+1} stange loops."`;
+    else if ((1 < i) && (i < 26)) {
+      array[i-1] = `"I am ${i} stange loops."`;
     }
   } //for loop
   return array;
