@@ -9,6 +9,7 @@ function forLoop(array) {
   return array;
 }
 
+
 function whileLoop(num) {
   while (num - 1 >= 0) {
     console.log(--num);
@@ -25,6 +26,6 @@ function maybeTrue() {
 function doWhileLoop(array) {
   do {
     array.splice(array.length - 1);
-  } while (maybeTrue());
+  } while (array.length > 0 && maybeTrue());
   return array;
 }
