@@ -24,7 +24,7 @@ var arrayTwo = [1,3,5,6,8,10,'test']
 
 function doWhileLoop(array) {
 do {array.pop()}
-while (array.length > 0 && maybeTrue())
+while (array.length > 0 )
 return array
 }
 doWhileLoop(arrayTwo)
