@@ -4,7 +4,7 @@ function forLoop(array){
       array.push("I am 1 strange loop.")
     }
     else {
-      array.push("I am ${i} strange loops.")
+      array.push(`I am ${i} strange loops.`)
     }
   }
   return array
@@ -17,11 +17,11 @@ function whileLoop(num){
   return 'done'
 }
 
-function maybeTrue(){
-   return Math.random() >= 0.5
-}
-
 function doWhileLoop(array){
+  function maybeTrue(){
+    return Math.random() >= 0.5
+  }
+  
   do {
     array.pop()
   } while (array.length > 0 && maybeTrue())
