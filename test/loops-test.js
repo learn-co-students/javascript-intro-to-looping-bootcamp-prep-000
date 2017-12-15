@@ -48,7 +48,7 @@ describe('loops', () => {
       const n = Math.floor(Math.random() * 100)
 
       expect(whileLoop(n)).to.equal('done')
-      expect(spy).to.have.been.called.exactly(n)
+      expect(spy).to.have.been.called.exactly(n+1) // changed to n+1 from n
 
       console.log.reset()
     })
