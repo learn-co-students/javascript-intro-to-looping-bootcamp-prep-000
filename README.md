@@ -156,7 +156,7 @@ function maybeTrue() {
   return Math.random() >= 0.5
 }
 
-do {
+do { delete array[i]
   console.log('doo-bee-doo-bee-doo')
 } while (maybeTrue());
 ```
