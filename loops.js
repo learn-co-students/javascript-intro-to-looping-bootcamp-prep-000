@@ -8,9 +8,18 @@ function forLoop(array) {
 }
 return array;
 }
-function whileLoops(n) {
+function whileLoop(n) {
   while (n > 0) {
-  console.log(n);
+  console.log(--n)
   }
-  return 'done';
+return 'done';
+}
+function maybeTrue() {
+  return Math.random() >= 0.5;
+}
+function doWhileLoop(array) {
+  do {
+array = array.slice(1);
+  } while (array.length > 0 && maybeTrue());
+  return array;
 }
