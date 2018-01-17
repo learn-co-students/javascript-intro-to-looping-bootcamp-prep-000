@@ -1,7 +1,7 @@
 function forLoop(array){
   var forLoopArray = array
   for(var i=0; i<25; i++){
-  forLoopArray.push("I am ${i} strange loop${i === 0 ? '' : 's'}.")
+  forLoopArray.push(`I am ${i} strange loop${i === 0 ? '' : 's'}.`)
   }
   return forLoopArray
 }
@@ -18,7 +18,6 @@ function whileLoop(n){
   }
 }
 function doWhileLoop(array){
-
   function maybeTrue(){
     return Math.random()>=0.5
   }
@@ -27,4 +26,11 @@ do {
   maybeTrue();
   return array
  } while (array.length > 0 && maybeTrue());
+do {  (function maybePop(array){array.pop()})()
+  (function maybeTrue(){
+    return Math.random()>=0.5
+  })()
+  
+ } while (length > 0 && maybeTrue());
+
 }
