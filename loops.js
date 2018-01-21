@@ -4,9 +4,10 @@ function forLoop(array) {
       console.log(array.push(`I am 1 strange loop.`));
       }
     else {
-      console.log(array.push(`I am ` + i + ` strange loops.`));
+      console.log(array.push(`I am `+ i +` strange loops.`)); // it works as well if we write ${i}
       }
   }
+  return array
 }
 
 
@@ -24,7 +25,7 @@ function maybeTrue() {
 }
 
 function doWhileLoop(array){
-  do { array.pop()    
+  do { array.pop()
   } while (array.length > 0 && maybeTrue());
   return array
 }
