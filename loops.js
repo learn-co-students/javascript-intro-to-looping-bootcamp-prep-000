@@ -1,5 +1,5 @@
 function forLoop(array){
- for (let i=1; i < array.length; i++){
+ for (let i=0; i < 25; i++){
  if(i===1){
    array.push("I am 1 strange loop.");
  } else {
@@ -10,15 +10,19 @@ function forLoop(array){
 }
 
 function whileLoop(n){
-let countdown=n;
-
-while (countdown===0){
-  console.log("done");
-}
+  while (n > 0){
+    console.log(--n);
+  }
+  return "done";
 }
 
 function doWhileLoop(array){
 function maybeTrue() {
   return Math.random() >= 0.5;
 }
+
+do{
+  array.pop();
+} while (array.length > 0 && maybeTrue());
+return array;
 }
