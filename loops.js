@@ -5,7 +5,7 @@ function forLoop(array){
     if(i > 1){
       temp += 's';
     }
-    array[array.length] = temp;
+    array.push(temp);
   }
   return array;
 }
