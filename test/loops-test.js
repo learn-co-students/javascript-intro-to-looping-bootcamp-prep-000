@@ -65,3 +65,19 @@ describe('loops', () => {
     })
   })
 })
+
+const forLoop(array) {
+  array = ['eat my ass']
+  for (let i = 0; i < 25; i++)
+}
+
+let countdown = 100; 
+
+while (countdown > 0) {
+  console.log(--countdown)
+}
+
+
+
+
+
