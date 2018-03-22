@@ -9,3 +9,12 @@ function forLoop(array) {
   }
   return array;
 }
+
+function whileLoop(number) {
+  var countdown;
+  let countdown = number;
+  while (countdown > 0) {
+    console.log(--countdown)
+  }
+  number--;
+}
