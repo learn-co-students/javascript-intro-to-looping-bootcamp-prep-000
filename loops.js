@@ -8,9 +8,20 @@ function forLoop(array) {
   }
 }
 
-function whileLoop(number) {
-  let countdown = number;
-  while (countdown > 0) {
-    console.log(--countdown)
-  }
-}
+//function whileLoop(number) {
+//  return
+//  let countdown = number; number - 1;
+//  while (countdown > 0) {
+//    console.log(--countdown)
+//  }
+//}
+
+//function doWhileLoop(array) {
+//  function maybeTrue() {
+//    return Math.random() >=0.5
+//  }
+//  do {
+//    array.shift()
+//  } while array.length > 0 && maybeTrue();
+//  return array;
+//}
