@@ -1,4 +1,4 @@
-# JavaScript Loops
+u# JavaScript Loops
 
 ## Objectives
 - Build a for loop
