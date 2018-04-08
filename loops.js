@@ -14,7 +14,7 @@ var whileLoop = function(n){
   } return 'done'
 }
 
-var doWhileLoop = function(array){
+function doWhileLoop(array) {
   function maybeTrue() {
     return Math.random() >= 0.5
   }
