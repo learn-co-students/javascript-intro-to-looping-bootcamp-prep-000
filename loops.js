@@ -1,6 +1,8 @@
 function forLoop(array){
   array = []
-  for (let i = 0; i < 25; i++){
-  let lmd = i === 1 ? "I am 1 strange loop." : "I am ${i} strange loops."
-  }
+  for (let i = 0; i < 25; i++){ 
+   i === 1 ? array.push("I am 1 strange loop.") : array.push(`I am ${i} strange loops.`)
 }
+ return array
+}
+
