@@ -28,6 +28,8 @@ function doWhileLoop(array) {
     return Math.random() >= 0.5;
   }
   do {
+    //can also use slice
+    //array = array.slice(1);
     array.pop();
   } while (array.length > 0 || maybeTrue());
   return array;
