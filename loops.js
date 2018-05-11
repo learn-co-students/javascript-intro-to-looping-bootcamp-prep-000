@@ -33,7 +33,7 @@ function maybeTrue() {
 
 function doWhileLoop (randomArray){
   do {
-    randomArray.pop();
+    randomArray.pop(); //Note: to avoid altering the array sent to this function, use slice() instead.
   } while( randomArray.length > 0 && maybeTrue() );
   /* This is valid, too (but longer): while(randomArray[0] !== undefined && maybeTrue() === true); Note that the program itself said to use !== instead of != */
   
