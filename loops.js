@@ -11,3 +11,13 @@ function forLoop(array){
   }
   return array;
 }
+
+let countdown = 26;
+
+function whileLoop(countdown){
+	while(countdown > 0){
+		console.log(--countdown);
+	}
+	return 'done';
+}
+
