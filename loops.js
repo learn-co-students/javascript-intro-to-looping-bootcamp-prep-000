@@ -16,8 +16,6 @@ function whileLoop(n) {
   return "done"
 }
 
-myArray = ["hey", 99, "jude", 55, 100]
-
 function doWhileLoop(array) {
   function maybeTrue() {
     return Math.random() >= 0.5
