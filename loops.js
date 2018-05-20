@@ -14,14 +14,24 @@ function forLoop(array)
 
 function whileLoop(n)
 {
-  while(n >= 0)
+  while(n > 0)
   {
     console.log(n)
     n--
   }
+  return 'done'
+}
+
+//work in tandem
+function maybeTrue() {
+  return Math.random() >= 0.5
 }
 
 function doWhileLoop(array)
 {
+  do{
+    array.pop()
+  }while((maybeTrue() && array.length > 0));
   
+  return array
 }
