@@ -1,19 +1,19 @@
 
 function forLoop(array) {
   
-	let newArray = [];
+	//let newArray = [];
 	
 	for(let i = 1; i < 25; i++) {
 	  
 	 if(i === 1) {
-	  newArray.push(`I am ${i} strange loop`);
+	  array.push(`I am ${i} strange loop`);
 	} else {
-	  newArray.push(`I am ${i} strange loops`);
+	  array.push(`I am ${i} strange loops`);
 	}
 	}
-	return newArray;
+	return array;
    }
-  console.log(forLoop());
+  //console.log(forLoop());
 
 /* ===================================  */
 
@@ -24,7 +24,7 @@ while (n > 0) {
   }
   return ('done');
 }
-whileLoop(24);
+//whileLoop(24);
 
 
 /* ===================================  */
@@ -41,7 +41,7 @@ function doWhileLoop (array) {
   }
   while (
    array.length > 0 && maybeTrue());
-}
-return newArray;
 
+return newArray;
+}
 
