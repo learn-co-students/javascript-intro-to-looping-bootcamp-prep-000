@@ -4,7 +4,7 @@ function doWhileLoop(arr){
 }
 while (maybeTrue() && arr.length>0){
   arr.pop();
-}
+};
 return arr;
 }
 
