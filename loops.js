@@ -7,16 +7,15 @@ function forLoop(array) {
         array.push(`I am ${i} strange loops`);
       }
   }
+  return array;
 }
 
 function whileLoop(number) {
-  while (number > 1) {
+  while (number >= 1) {
+    console.log(number)
     number = number -1;
-    if (number===0) {
-    console.log('done')}
-    else {
-    console.log(number);}
-  }
+}
+  return 'done';
 }
 
 function maybeTrue() {
