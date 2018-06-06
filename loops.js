@@ -1,7 +1,8 @@
 // adds `"I am ${i} strange loop${i === 0 ? '' : 's'}."`to an array 25 times:
 function forLoop(array)
 {
-  for(let i = 0; i < 25; i++)
+  var j = array.length
+  for(let i = 0; i < 25 + j; i++)
   {
     if(i === 1)
     {
