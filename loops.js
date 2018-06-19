@@ -14,12 +14,25 @@ for (let i = 0; i < 25; i++)
   return array 
 }
 
-parseInt('number', 10)
-
 function whileLoop(number) {
  
 while (number > 0) {
   console.log(--number)
 }
 return 'done'
+}
+
+var array = []
+
+
+function doWhileLoop (array) {
+
+function maybeTrue() {
+  return Math.random() >= 0.5
+ }
+
+do {
+  array.pop()
+} while (array.length > 0 && maybeTrue());
+  return array
 }
