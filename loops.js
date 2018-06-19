@@ -14,8 +14,6 @@ for (let i = 0; i < 25; i++)
 }
 
 function whileLoop(number) {
-
-let number = 100;
  
 while (number > 0) {
   console.log(--number)
