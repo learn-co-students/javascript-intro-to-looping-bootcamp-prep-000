@@ -7,5 +7,22 @@ function forLoop(array) {
      array.push("I am " + i + " strange loops.");
   }
 }
-return array
+return array;
+}
+function whileLoop(n) {
+  while (n >= 1) {
+    console.log(--n);
+  if (n === 0) {
+    return('done');
+  }  
+  }
+}
+function maybeTrue() {
+  return Math.random() >= 0.5;
+}
+function doWhileLoop(array) {
+  do { 
+ array.pop() && maybeTrue();
+  } while (array.length > 0 && maybeTrue()); 
+  return array;
 }
