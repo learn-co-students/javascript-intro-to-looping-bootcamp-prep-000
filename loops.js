@@ -11,13 +11,13 @@ for (let i = 0; i < 25; i++) {
 return array;
 }
 
-function whileLoop() {
-  let countdown = 8;
+function whileLoop(n) {
+  let countdown = n;
   
   while (countdown > 0) {
     console.log(--countdown);
- return console.log("done");
- 
   }
+ 
+ return 'done';
+ 
 }
-
