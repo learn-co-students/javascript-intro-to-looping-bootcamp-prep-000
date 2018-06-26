@@ -17,7 +17,15 @@ function whileLoop(n) {
   while (countdown > 0) {
     console.log(--countdown);
   }
- 
  return 'done';
- 
+ }
+
+function doWhileLoop(array) {
+  function maybeTrue() {
+return Math.random() >= 0.5;
+  }
+ do {
+   console.log(array.length > 0 && maybeTrue());
+ } while (maybeTrue());
 }
+
