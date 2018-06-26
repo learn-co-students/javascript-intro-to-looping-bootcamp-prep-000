@@ -15,7 +15,9 @@ function whileLoop() {
   let countdown = 8;
   
   while (countdown > 0) {
-    console.log("done");
+    console.log(--countdown);
+ return console.log("done");
+ 
   }
 }
 
