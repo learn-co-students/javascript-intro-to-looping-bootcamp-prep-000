@@ -10,3 +10,26 @@ function forLoop(array) {
     return array;
 }
 forLoop(array);
+
+function whileLoop(num) {
+  let countdown = num;
+  while (countdown > 0) {
+    console.log(-- countdown);
+  }
+  return "done";
+}
+whileLoop(num);
+
+function maybeTrue() {
+  return Math.random() >= 0.5;
+}
+function doWhileLoop(array) {
+  //remove elements from array until array is empty or //maybeTrue returns false
+  do {
+  //remove elements from array
+  array.pop();
+}
+  while(array.length > 0 && maybeTrue());
+  return array;
+}
+doWhileLoop(num);
