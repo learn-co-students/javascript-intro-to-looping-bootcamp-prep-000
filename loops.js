@@ -1,4 +1,5 @@
-array []
-for (var i = 0; i < array.length; i++) {
-  array.push(`I am ${i} strange loop.`)
+array= []
+for (var i = 0; i < 25; i++) {
+  array.push(`I am ${i} strange loop${i===0 ? '' : 's'}.`)
 }
+console.log(array);
