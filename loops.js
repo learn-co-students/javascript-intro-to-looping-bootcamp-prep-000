@@ -10,8 +10,12 @@ for (let i=0; i<26; i++ ){
 }
 
 
-function whileLoop (x){
+function whileLoop(x){
   let countdown=x;
   while (countdown>0){console.log(--countdown)}
+  return "done";
 }
-return "done";
+
+function doWhileLoop(array){
+  
+}
