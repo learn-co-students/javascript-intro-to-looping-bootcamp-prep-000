@@ -23,4 +23,5 @@ function doWhileLoop(cars){
   do{
     cars.shift();
   }while(cars.length > 0 || maybeTrue());
+  return cars;
 }
