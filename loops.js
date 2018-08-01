@@ -12,8 +12,18 @@ function forLoop (array) {
 function whileLoop (number) {
   while (number > 0) {
     console.log(--number);
-  } else {
-    console.log('done');
   }
-  return number;
+  if (number === 0) {
+    return 'done';
+  }
+}
+
+function doWhileLoop (array) {
+  function maybeTrue() {
+  return Math.random() >= 0.5
+  }
+  do {
+    array.pop();
+  } while (array.length > 0 && maybeTrue());
+  return array;
 }
