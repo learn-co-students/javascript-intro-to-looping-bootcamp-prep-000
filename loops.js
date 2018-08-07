@@ -1,19 +1,19 @@
-// array = new Array();
+
 function forLoop(array) {
-for ( i = 1; i < 26; i++) {
-  if (i === 1) {
-    array[i] = `I am $(i) strange loop.`;
+for ( i = 0; i < 25; i++) {
+  var j = i +1;
+
+  if (i === 0) {
+    array[i] = `I am ${j} strange loop.`;
     } else {
-    array[i]= `I am $(i) strange loops.`;
+    array[i]= `I am ${j} strange loops.`;
     }
 }
-  return array;
+return array;
 }
 
+// whileLopp
 
-// whileLoop - this is passed in my Chrome console.
-
-// var n;
 function whileLoop(n) {
 
  while (n > 0) {
@@ -25,16 +25,13 @@ return 'done'
 
 // Do-While loop
 
-// function maybeTrue() {
-
-// }
 
 function doWhileLoop(array) {
   do {
-    array.unshift()
+    array.pop()
   }
   while
-  (array.length >= 0);  //maybeTrue()
+  (array.length >0);  //maybeTrue()
 
   }
   console.log(array);
