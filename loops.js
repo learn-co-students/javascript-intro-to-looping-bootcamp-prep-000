@@ -1,5 +1,6 @@
 
 function forLoop(array) {
+
 for ( i = 0; i < 25; i++) {
   var j = i +1;
 
@@ -8,7 +9,8 @@ for ( i = 0; i < 25; i++) {
     } else {
     array[i]= `I am ${j} strange loops.`;
     }
-}
+  }
+
 return array;
 }
 
@@ -25,14 +27,22 @@ return 'done'
 
 // Do-While loop
 
+// function maybeTrue() {
+//   return Math.random() >5;
+// }
+
+// function incrementVariable() {
+//   i = i + 1;
+// }
 
 function doWhileLoop(array) {
+  // i = array.length
+
   do {
     array.pop()
   }
-  while
-  (array.length >0);  //maybeTrue()
+  //incrementVariable();
+  while(array.length>0);  //condition incrementVariable() && array.length >0)
 
-  }
-  console.log(array);
+  return array;
 }
