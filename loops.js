@@ -1,7 +1,7 @@
 /*
 1) loops forLoop(array) adds `"I am ${i} strange loop${i === 0 ? '' : 's'}."`to an array 25 times
  */
-for (var index = 1; [condition]; [iteration]) {
+forLoop (var index = 1; index < 26; index++) {
   [loopBody]
 }
 /*
