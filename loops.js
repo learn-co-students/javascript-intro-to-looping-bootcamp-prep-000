@@ -7,7 +7,12 @@ var array = {}
 function forLoop(array) {
 
 for (let index = 0; index < 25; index++) {
-  array[index] = `"I am ${index} strange loop${index === 0 ? '' : 's'}."`
+  if (index === 1) {
+    array[index] = "I am 1 strange loop."
+    // ${index === 0 ? '' : 's'}."`
+  } 
+    array[index] = `"I am ${index} strange loops."`
+  }
   return array
 }
 
