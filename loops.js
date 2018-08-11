@@ -3,6 +3,7 @@ var array = {
 }
 
 function forLoop(array) {
+  array[i] = "I am 1 strange loop."
   return array
 }
 
