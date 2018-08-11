@@ -2,7 +2,9 @@
 1) loops forLoop(array) adds `"I am ${i} strange loop${i === 0 ? '' : 's'}."`to an array 25 times
  */
  
-var array = {}
+var array = {
+  // inially empty
+}
 
 function forLoop(array) {
 
@@ -14,10 +16,8 @@ function forLoop(array) {
       array[i] = `"I am ${i} strange loop${index === 0 ? '' : 's'}."`
     }
  */
-  array[i] = "I am 1 strange loop.${i === 0 ? '' : 's'}."`
+  array[i] = "I am ${i} strange loop.${i === 0 ? '' : 's'}."`
   return array
-}
-
 }
 
 /*
