@@ -10,7 +10,7 @@ for (let index = 0; index < 25; index++) {
   if (index === 1) {
     array[index] = "I am 1 strange loop."
     // ${index === 0 ? '' : 's'}."`
-  } 
+  } else {
     array[index] = `"I am ${index} strange loops."`
   }
   return array
