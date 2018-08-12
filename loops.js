@@ -20,7 +20,7 @@ function forLoop(array) {
 var count = 0
 
 function whileLoop(count) {
- 
+  count = 0
   while (count > 0) {
     console.log(count)
     count = count - 1
