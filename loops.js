@@ -27,19 +27,23 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(array) {
+  /*
   var i = array.length - 1;
  
   function decrementVariable() {
     i = i - 1;
   }
+   */
+   
+  if (array.length > 0) {
   
-  do {
-    delete array[i]
-    console.log('doo-bee-doo-bee-doo')
-    decrementVariable();
-  } while (array.length > 0 && decrementVariable());
+    do {
+      delete array[0]
+      console.log('doo-bee-doo-bee-doo')
+      decrementVariable();
+    } while (array.length > 0)
+    // && decrementVariable());
+  }
   
   return array
 }
- 
- 
