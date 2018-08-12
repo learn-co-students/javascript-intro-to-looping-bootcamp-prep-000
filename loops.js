@@ -3,12 +3,12 @@ var array = {
 }
 
 function forLoop(array) {
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 25; i++) {
     /*
     array[i] = `"I am ${i} strange loop${i === 0 ? '' : 's'}."`
      */
-    if (i === 1) {
-      array[i] = "I am 1 strange loop."
+    if (i === 11) {
+      array[i] = "I am 11 strange loops."
     } else {
       array[i] = `"I am ${i} strange loops."`
     }
