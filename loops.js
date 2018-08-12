@@ -29,15 +29,15 @@ function whileLoop(n) {
 function doWhileLoop(array) {
   var i = array.length - 1;
  
-  function incrementVariable() {
+  function decrementVariable() {
     i = i - 1;
   }
   
   do {
     delete array[i]
     console.log('doo-bee-doo-bee-doo')
-    incrementVariable();
-  } while (array.length > 0 && incrementVariable());
+    decrementVariable();
+  } while (array.length > 0 && decrementVariable());
   
   return array
 }
