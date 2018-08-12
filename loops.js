@@ -22,7 +22,7 @@ var count = 0
 function whileLoop(count) {
  
   while (count > 0) {
-  console.log(count)
+  console.log(--count)
   count = count - 1
   }
   return 'done'
