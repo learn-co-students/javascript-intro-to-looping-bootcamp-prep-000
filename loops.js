@@ -17,14 +17,15 @@ function forLoop(array) {
 }
  */
  
-/* 
+ 
 let countdown = 100;
  
 while (countdown > 0) {
   console.log(--countdown)
 } 
- */
- 
+
+
+/* 
 let count = 10
 
 function whileLoop(count) {
@@ -33,7 +34,8 @@ function whileLoop(count) {
   }
   return 'done'
 }
-
+ */
+ 
 /*
 function doWhileLoop(array) {
   
