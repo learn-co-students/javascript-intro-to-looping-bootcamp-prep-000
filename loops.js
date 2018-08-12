@@ -40,7 +40,7 @@ function doWhileLoop(array) {
     do {
       delete array[0]
       console.log('doo-bee-doo-bee-doo')
-      decrementVariable();
+      // decrementVariable();
     } while (array.length > 0)
     // && decrementVariable());
   }
