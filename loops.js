@@ -1,4 +1,6 @@
-var array = {}
+var array = {
+// initially emply
+}
 
 /*
 function forLoop(array) {
@@ -15,7 +17,7 @@ function forLoop(array) {
 }
  */
  
-var n = array.length()
+var n = arrayLength()
 function whileLoop(n) {
  
   while (n > 0) {
