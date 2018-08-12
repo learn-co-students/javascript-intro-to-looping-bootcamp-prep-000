@@ -17,13 +17,13 @@ function forLoop(array) {
 }
  */
  
-var n = 0
+var count = 0
 
-function whileLoop(n) {
+function whileLoop(count) {
  
-  while (n > 0) {
-  console.log(n)
-  n = n - 1
+  while (count > 0) {
+  console.log(count)
+  count = count - 1
   }
   return 'done'
 }
