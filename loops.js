@@ -23,7 +23,7 @@ function whileLoop(n) {
   while (countdown > 0) {
   console.log(--countdown)
   }
-  return array
+  return 'done'
 }
 
 function doWhileLoop(array) {
