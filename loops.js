@@ -17,13 +17,15 @@ function forLoop(array) {
 }
  */
  
+function whileLoop(count) {
+  
+  let countdown = 100;
  
-let countdown = 100;
- 
-while (countdown > 0) {
-  console.log(--countdown)
-} 
-
+  while (countdown > 0) {
+    console.log(--countdown)
+  }
+  
+}
 
 /* 
 let count = 10
