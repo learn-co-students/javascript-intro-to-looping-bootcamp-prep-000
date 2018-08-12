@@ -7,8 +7,8 @@ function forLoop(array) {
     /*
     array[i] = `"I am ${i} strange loop${i === 0 ? '' : 's'}."`
      */
-    if (i === 11) {
-      array[i] = "I am 11 strange loops."
+    if (i === 1) {
+      array[i] = "I am 1 strange loops."
     } else {
       array[i] = `"I am ${i} strange loops."`
     }
