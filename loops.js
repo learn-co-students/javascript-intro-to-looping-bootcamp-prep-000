@@ -1,6 +1,4 @@
-var array = {
-  // inially empty
-}
+var array = {}
 
 /*
 function forLoop(array) {
