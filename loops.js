@@ -31,18 +31,14 @@ function doWhileLoop(array) {
   var i = 1
  
   function incrementVariable() {
-    i = i + 1;
+    i = i + 1
   }
   
    
-  if (array.length > 0) {
-  
-    do {
+  do {
       delete array.i
       console.log('doo-bee-doo-bee-doo')
-      incrementVariable();
-    } while (array.length > 0 && incrementVariable());
-  }
+    } while (array.length > 0 && incrementVariable())
   
   return array
 }
