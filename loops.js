@@ -18,6 +18,7 @@ function forLoop(array) {
  */
  
 var n = 0
+console.log(n)
 function whileLoop(n) {
  
   while (n > 0) {
