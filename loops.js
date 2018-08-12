@@ -38,7 +38,7 @@ function doWhileLoop(array) {
   do {
       delete array.i
       console.log('doo-bee-doo-bee-doo')
-    } while (array.length > 0 && incrementVariable())
+    } while (array.length > 0 || incrementVariable())
   
   return array
 }
