@@ -17,6 +17,7 @@ function forLoop(array) {
   return array
 }
 
+var n = array.length
 function whileLoop(n) {
  
   while (n > 0) {
