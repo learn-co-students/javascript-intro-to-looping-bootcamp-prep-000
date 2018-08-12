@@ -17,7 +17,15 @@ function forLoop(array) {
 }
  */
  
-var count = 10
+/* 
+let countdown = 100;
+ 
+while (countdown > 0) {
+  console.log(--countdown)
+} 
+ */
+ 
+let count = 10
 
 function whileLoop(count) {
   while (count > 0) {
