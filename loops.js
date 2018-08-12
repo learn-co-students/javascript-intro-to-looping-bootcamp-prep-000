@@ -2,11 +2,10 @@ var array = {
   // inially empty
 }
 
+/*
 function forLoop(array) {
   for (let i = 0; i < 25; i++) {
-    /*
-    array[i] = `"I am ${i} strange loop${i === 0 ? '' : 's'}."`
-     */
+//    array[i] = `"I am ${i} strange loop${i === 0 ? '' : 's'}."`
     if (i === 1) {
       array[i] = "I am 1 strange loop."
     } else {
@@ -16,7 +15,8 @@ function forLoop(array) {
   }
   return array
 }
-
+ */
+ 
 var n = array.length
 function whileLoop(n) {
  
