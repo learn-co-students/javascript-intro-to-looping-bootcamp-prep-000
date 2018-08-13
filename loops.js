@@ -61,6 +61,7 @@ function doWhileLoop(array) {
   }
   
   do {
+    delete array[i]
     console.log('doo-bee-doo-bee-doo')
     incrementVariable();
   } while (i < 5)
