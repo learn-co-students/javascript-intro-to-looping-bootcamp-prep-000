@@ -8,7 +8,9 @@ function forLoop(array) {
     if (i === 1) {
       [i] = "I am 1 strange loop."
     } else {
+   */
       array[i] = `"I am ${i} strange loop${i === 0 ? '' : 's'}."`
+  /*    
     }
    */
     return array
