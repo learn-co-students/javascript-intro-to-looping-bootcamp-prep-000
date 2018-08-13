@@ -28,16 +28,6 @@ function whileLoop(number) {
   return 'done'
 }
 
-/* 
-let count = 10
-
-function whileLoop(count) {
-  while (count > 0) {
-    console.log(--count)
-  }
-  return 'done'
-}
- */
  
 /*
 function doWhileLoop(array) {
