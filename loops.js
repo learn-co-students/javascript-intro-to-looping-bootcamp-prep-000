@@ -16,6 +16,7 @@ function forLoop(array) {
   return array
 }
  */
+ 
 /* passed 
 function whileLoop(number) {
   while (number > 0) {
@@ -40,8 +41,7 @@ function doWhileLoop(array) {
 //      delete array.i
     console.log('doo-bee-doo-bee-doo')
     incrementVariable()
-  } while 
-  (i < 5)
+  } while (i < 5)
 //    } while (array.length > 0 &&  incrementVariable())
   
   return array
