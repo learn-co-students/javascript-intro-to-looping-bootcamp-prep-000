@@ -26,7 +26,7 @@ function whileLoop(number) {
 }
  */
  
-/*
+
 function doWhileLoop(array) {
   
   var i = 1
@@ -36,11 +36,13 @@ function doWhileLoop(array) {
   }
   
    
-  do {
-      delete array.i
-      console.log('doo-bee-doo-bee-doo')
-    } while (array.length > 0 || incrementVariable())
+  do { 
+//      delete array.i
+    console.log('doo-bee-doo-bee-doo')
+    incrementVariable()
+  } while 
+  (i < 5)
+//    } while (array.length > 0 &&  incrementVariable())
   
   return array
 }
- */
