@@ -17,12 +17,12 @@ function forLoop(array) {
 }
  */
  
-function whileLoop(count) {
+function whileLoop(number) {
   
-  let countdown = 10;
+  number = 10;
  
-  while (countdown > 0) {
-    console.log(--countdown)
+  while (number > 0) {
+    console.log(--number)
   }
   
   return 'done'
