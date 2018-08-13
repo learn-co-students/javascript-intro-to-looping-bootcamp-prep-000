@@ -3,7 +3,7 @@ var array = []
 
 function forLoop(array) {
   
-  for (incrementVariable i = 0; i < 25; i++) { 
+  for (var i = 0; i < 25; i++) { 
     i = i + 1
   } 
   
