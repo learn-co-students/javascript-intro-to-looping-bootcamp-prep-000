@@ -1,6 +1,14 @@
 var array = []
 // initially emply
 
+function forLoop(array) {
+  
+  for (incrementVariable i = 0; i < 25; i++) { 
+    i = i + 1
+  } 
+  
+}
+ 
 /*
 function forLoop(array) {
   for (let i = 0; i < 25; i++) {
@@ -43,3 +51,4 @@ function doWhileLoop(array) {
   return array
 }
  */
+ 
