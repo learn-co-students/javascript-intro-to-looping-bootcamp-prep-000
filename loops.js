@@ -27,7 +27,7 @@ function whileLoop(number) {
 }
  */
  
-
+/*
 function doWhileLoop(array) {
   
   var i = 1
@@ -46,3 +46,12 @@ function doWhileLoop(array) {
   
   return array
 }
+ */
+ 
+ /*
+ TODO: Define a function called doWhileLoop in loops.js. The function should take an array as an argument. Use the incrementVariable() function (you can copy it from this README) as the condition, and remove elements from the array until the array is empty or until incrementVariable() returns false. (Your condition might look something like array.length > 0 && incrementVariable().) Finally, return the array.
+  */
+  
+  function doWhileLoop(array) {
+    return array
+  }
