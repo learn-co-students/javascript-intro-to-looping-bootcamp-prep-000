@@ -3,14 +3,22 @@ var array = []
 function forLoop(array) {
   
   for (var i = 0; i < 25; i++) { 
+    /* 
+    if "(i === 11) {
+      array[i] = `"I am ${i} strange loop${i === 11 ? '' : 's'}."`
+    } else { 
+     
+     */
     array[i] = `"I am ${i} strange loop${i === 1 ? '' : 's'}."`
-    
-  }
-   
+    /*
+    }
+     */
+  } 
+  
     return array
 }
  
- 
+/* 
 function whileLoop(number) {
   while (number > 0) {
     console.log(--number)
@@ -35,5 +43,5 @@ function doWhileLoop(array) {
   
   return array
 }
- 
+ */
  
