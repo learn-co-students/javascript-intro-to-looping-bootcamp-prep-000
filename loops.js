@@ -30,7 +30,6 @@ function doWhileLoop(array) {
   
   do {
     array.shift()
-    console.log('doo-bee-doo-bee-doo')
     incrementVariable();
   } while (array.length > 0 &&  incrementVariable())
   
