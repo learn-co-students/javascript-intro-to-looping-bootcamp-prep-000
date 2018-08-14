@@ -35,7 +35,7 @@ function whileLoop(number) {
 }
  */
   
-/*
+
 function doWhileLoop(array) { 
   var i = 0;
  
@@ -44,12 +44,12 @@ function doWhileLoop(array) {
   }
   
   do {
-    delete array[i]
+    array.shift()
     console.log('doo-bee-doo-bee-doo')
     incrementVariable();
   } while (array.length > 0 &&  incrementVariable())
   
   return array
 }
- */
+ 
  
