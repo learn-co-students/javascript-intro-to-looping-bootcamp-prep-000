@@ -20,7 +20,6 @@ function whileLoop(number) {
   return 'done'
 }
  
-  
 
 function doWhileLoop(array) { 
   var i = 0;
