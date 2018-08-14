@@ -36,7 +36,7 @@ describe('loops', () => {
       let rest = "I am 24 strange loops."
         
       expect(strangeArray[11]).to.equal(first)
-      expect(strangeArray[24]).to.equal(rest)
+      expect(strangeArray[34]).to.equal(rest)
       expect(strangeArray.length).to.equal(t + 25)
     })
   })
