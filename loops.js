@@ -5,7 +5,7 @@ var array = [
 function forLoop(array) {
   
   for (var i = 0; i < 25; i++) { 
-    araay.push(`"I am ${i} strange loop${i === 1 ? '' : 's'}."`)
+    array.push(`"I am ${i} strange loop${i === 1 ? '' : 's'}."`)
 /*    
  //   array[i] = `"I am ${i} strange loop${i === 1 ? '' : 's'}."`
     if (i === 1) {
