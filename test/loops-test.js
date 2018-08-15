@@ -34,7 +34,7 @@ describe('loops', () => {
 
       let first = "I am 1 strange loop."
       let rest = "I am 24 strange loops."
-        
+
       expect(strangeArray[11]).to.equal(first)
       expect(strangeArray[34]).to.equal(rest)
       expect(strangeArray.length).to.equal(t + 25)
@@ -53,14 +53,14 @@ describe('loops', () => {
     })
   })
 
-  // describe('doWhileLoop(array)', () => {
-  //   it('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
-  //     const [array, t] = makeArray()
-  //     const l = array.length
-  // 
-  //     const newArray = doWhileLoop(array)
-  // 
-  //     expect(newArray).to.have.length.of.at.most(l - 1)
-  //   })
-  // })
+  describe('doWhileLoop(array)', () => {
+    it('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
+      const [array, t] = makeArray()
+      const l = array.length
+
+      const newArray = doWhileLoop(array)
+
+      expect(newArray).to.have.length.of.at.most(l - 1)
+    })
+  })
 })
