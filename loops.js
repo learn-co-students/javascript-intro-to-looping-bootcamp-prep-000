@@ -20,10 +20,10 @@ function doWhileLoop(array) {
   let i = 0
   function incrementVariable() {
     i = i - 1
+    return i
   }
   do {
     array.pop()
-    incrementVariable()
-  } while (array.lenth > 0 || incrementVariable())
+  } while (array.length > 0 && incrementVariable())
   return array
 }
