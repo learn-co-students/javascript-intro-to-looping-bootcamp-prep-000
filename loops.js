@@ -37,7 +37,7 @@ function doWhileLoop(array) {
     //var 
     counter = 0;
     array.splice(0, 1);
-    counter += 1
+    counter += 1;
   } while (array.length > 0);
     return array;
 }
