@@ -19,15 +19,12 @@ while (number > 0) {
   return("done");
 }
 
-
 function doWhileLoop(array){
-  var i = 0;
- 
-function incrementVariable() {
-  i = i + 1;
-}
-  do {
-    array.splice()
+  function maybeTrue() {
+    return Math.random() >= 0.5;
   }
-  while 
+  do {
+    array.pop();
+  } while(array.length > 0 && maybeTrue());
+     return array;
 }
