@@ -19,8 +19,8 @@ function doWhileLoop(array){
   array.length > 0 && incrementVariable();
 }
 do{
-  console.log(i)i++;
+  console.log(i);
   {
   }
 } while (i<5);
-return array
+return false
