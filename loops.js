@@ -31,11 +31,18 @@ function whileLoop(n) {
 
 
 function doWhileLoop(array) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
+  var i = 0;
+ 
+function incrementVariable() {
+  i++;
+}
+ 
+do {
+  console.log("doo-bee-doo-bee-doo");
+  incrementVariable();
+} while (i < 5);
   }
    do {
     array.pop();
-  } while (array.length > -1 && maybeTrue());
+  } while (array.length > 0 && incrementVariable());
     return array;
-}
