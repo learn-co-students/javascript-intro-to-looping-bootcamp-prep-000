@@ -59,7 +59,7 @@ describe('loops', () => {
       const l = array.length
 
       const newArray = doWhileLoop(array)
-
+      console.log(newArray)
       expect(newArray).to.have.length.of.at.most(l - 1)
     })
   })
