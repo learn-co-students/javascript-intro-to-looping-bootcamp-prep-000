@@ -7,4 +7,22 @@ var names = ["Taylor", "Marcia", "Kamille", "Amber", "Travis"];
     	text += names[i] + "<br>";
     }
 
+	var names = ["Taylor", "Marcia", "Kamille", "Amber", "Travis"];
+	var text = "";
+	var x = 0;
+
+	do {
+		text += names[x] + "<br>";
+    	x++;
+
+	} while (x < 10);
 	
+	
+	var names = ["Taylor", "Marcia", "Kamille", "Amber", "Travis"];
+	var text = "";
+	var x = 0;
+
+	while(x < 10) {
+		text += x + "<br>";
+		x++
+	}
