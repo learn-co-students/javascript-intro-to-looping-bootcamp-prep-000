@@ -1,0 +1,10 @@
+// the for loop //
+
+for
+([initalization]; [condition]; [iteration]) {[loopBody];
+}
+
+for (var i = 1; i < 100; 1++) {
+
+console.log (" Hello World the " + i + "time");
+}
