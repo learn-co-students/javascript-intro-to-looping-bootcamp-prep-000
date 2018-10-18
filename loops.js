@@ -1,10 +1,10 @@
 function forLoop(array) {
-  for (let i = 0; i < 25; i++) {
-  if (i === 1) {
-  array.unshift("I am 1 strange loop.");
+  for(i = 0; i < 25; i++) {
+    if (i === 0) {
+      array.push("I am 1 strange loop.");
     }
-  else {
-  array.unshift("I am ${i} strange loops.");
+    else{
+      array.push(`I am ${i} strange loops.`);
     }
   }
   return array;
@@ -12,21 +12,36 @@ function forLoop(array) {
 
 function whileLoop(number) {
   while (number > 0) {
-  console.log(--number)
+    console.log(--number);
   }
   return "done";
 }
 
-var i = 0
-
+function doWhileLoop(array) {
+  var i = 0;
+ 
 function incrementVariable() {
   i = i + 1;
 }
-
-
-function doWhileLoop(array) {
-  do {array.pop()}
-  
-  while(array.length > 0 && incrementVariable())
-  return array
+  do {
+    array.pop();
+  } 
+  while(array.length > 0 && incrementVariable());
+  return array;
 }
+
+
+
+/*
+  describe('doWhileLoop(array)', () => {
+    it('removes elements from `array` until `array` is empty or until `maybeTrue()` returns `false`', () => {
+      const [array, t] = makeArray()
+      const l = array.length
+
+      const newArray = doWhileLoop(array)
+
+      expect(newArray).to.have.length.of.at.most(l - 1)
+    })
+  })
+})
+*/
