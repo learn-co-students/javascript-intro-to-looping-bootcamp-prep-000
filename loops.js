@@ -8,6 +8,3 @@ function forLoop (array) {
   }
   return array;
 }
-
-let test = [];
-forLoop(test);
