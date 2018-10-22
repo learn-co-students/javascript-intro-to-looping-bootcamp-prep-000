@@ -22,11 +22,16 @@ function whileLoop(number) {
 function doWhileLoop(array) {
 	var i = 0;
 
+	function incrementVariable() {
+  i = i + 1;
+}
+
 
 	do {
    array = array.slice(1);
+	 incrementVariable();
 
-} while (array.length > 0);
+} while (array.length > 0 && i < 5);
 
 return array;
 }
