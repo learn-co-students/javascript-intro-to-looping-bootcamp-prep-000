@@ -13,12 +13,11 @@ function whileLoop(n) {
   while(n > 0) {
     console.log(n--)
   }
-  return "done"
+  return 'done'
 }
 
-<<<<<<< HEAD
 function maybeTrue() {
-  return Math.random() >= 0.5
+  return Math.random() >= 0.5;
 }
 
 function doWhileLoop(array) {
@@ -26,16 +25,4 @@ function doWhileLoop(array) {
     array.pop()
   } while(array.length > 0 || maybeTrue())
   return array;
-=======
-function doWhile(array) {
-  function incrementVariable(array) {
-    array.pop()
-  }
-
-  do {
-    incrementVariable()
-  } while(array.length > 0)
-
-  return false;
->>>>>>> f75629e08500b77ab318a2278285972c8e356e53
 }
