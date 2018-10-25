@@ -26,6 +26,5 @@ function doWhileLoop(array) {
     i = i - 1
     }
   } while ( array.length > 0 && incrementVariable())
-  console.log(array.length)
   return ('length')
 }
