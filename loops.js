@@ -20,11 +20,11 @@ function whileLoop(number) {
 
 function doWhileLoop(array) {
   array = array.length <= 9
-  var i = 9;
+  var i = 0;
   do {
     function incrementVariable() {
     i = i - 1
     }
   } while ( array.length > 0 && incrementVariable())
-  return (array)
+  return ('length')
 }
