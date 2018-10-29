@@ -29,11 +29,13 @@ function whileLoop(n){
 
 
 function doWhileLoop(array){
-  function maybeTrue() {
-  return Math.random() >= 0.5
+ var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
 }
   do {array=array.slice(1)}
-  while(array.length>0 && maybeTrue())
+  while(array.length>0 && incrementVariable())
 
   return array
 }
