@@ -18,6 +18,14 @@ function whileLoop(number) {
   return "done";
 }
 
-function doWhileLoop {
-  do
+function incrementVariable(i) {
+  i = i + 1;
+}
+
+function doWhileLoop(array) {
+  do {
+    array.pop();
+    
+  }while(array.length > 0 && incrementVariable());
+  return array;
 }
