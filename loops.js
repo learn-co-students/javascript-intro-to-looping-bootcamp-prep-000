@@ -1,32 +1,29 @@
-
-function forLoop(a){
-  for(let i=0; i<25; i++){
-    if(i === 1){
-      a.push("I am 1 strange loop.");
-    }
-    else{
-      a.push(`I am ${i} strange loop${i === 0 ? '' : 's'}.`);
-    }
+function forLoop(array){
+  for (let i = 0; i < 25; i++){
+    let plural = (i === 1) ? "" : "s";
+    array.push(`I am ${i} strange loop${plural}.`);
   }
-  return a;
+  
+  return array;
 }
 
 function whileLoop(n){
-  while(n > 0){
-    console.log(--n);
+  while (n-- > 0){
+    console.log(n);
   }
-  return "done";
+  return `done`
 }
 
-var i = 0;
-function incrementVariable(){
-  i = i + 1;
-}
+function doWhileLoop(array){
+  let i = 0;
 
-function doWhileLoop(a){
-  do{
-    a.pop();
-  } while((a.length !== 0) || (incrementVariable() === false))
-  
-  return a;
+  function incrementVariable(){
+    i = i + 1 
+  }
+
+  do { 
+    array.pop()
+  } while (array.length > 0 && incrementVariable())
+
+  return array
 }
