@@ -1,14 +1,37 @@
 function forLoop(array) {
   for(var i = 0; i < 25; i++) {
     if (i === 0) {
-      array.push("I am 1 strange loop.");
+      array.unshift("I am 1 strange loop.");
     }
     else {
-      array.push(`I am ${i} strange loop.`);
+      array.unshift(`I am ${i} strange loop.`);
     }
   }
   return array;
 }
+
+function whileLoop(number) {
+  while(number > 0) {
+    console.log(number--);
+  }
+  return "done";
+}
+
+function doWhileLoop(array) {
+  var i = 0;
+ 
+function incrementVariable() {
+ i = i + 1;
+}
+do {
+  array.shift();
+}
+while(array.length > 0 && incrementVariable());
+return array;
+}
+
+  
+
 
 /*
 describe('forLoop(array)', () => {
