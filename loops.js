@@ -1,47 +1,17 @@
 function forLoop(array) {
-  for(i = 0; i < 25; i++) {
-    if(i === 1) {
-      array.push('I am 1 strange loop.');
+  for(var i = 0; i < 25; i++) {
+    if (i === 0) {
+      array.push("I am 1 strange loop.");
     }
     else {
-     array.push(`I am ${i} strange loops.;`);
+      array.push(`I am ${i} strange loop.`);
     }
   }
-  return array;
-}
-
-function whileLoop(number) {
-  while (number > 0) {
-    console.log(--number);
-  }
-  return 'done';
-}
-
-function doWhileLoop(array) {
-  function incrementVariable() {
-    i = i + 1;
-  }
-  do {
-    array.pop();
-  }
-  while (array.length > 0 && incrementVariable());
   return array;
 }
 
 /*
-for (let i = 0; i < t; i++) {
-    array.push("I am a strange loop.")
-  }
-
-  return [array, t]
-}
-
-describe('loops', () => {
-  jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
-  })
-
-  describe('forLoop(array)', () => {
+describe('forLoop(array)', () => {
     it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
@@ -80,4 +50,5 @@ describe('loops', () => {
     })
   })
 })
+
 */
