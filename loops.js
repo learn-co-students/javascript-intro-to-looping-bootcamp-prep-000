@@ -33,7 +33,7 @@ function incrementVariable() {
 	do { // will run following body AT LEAST once.
 
 		// console.log('array.length = ' + array.length + ' and i = ' + i); // WHAT THE HECK DOES THIS MEAN
-    // console.log("DID THIS WORK?!");
+    // console.log("DID THIS WORK?!"); // update: I actually don't even need the console.log part
 		array = array.slice(1); // removes the first element in an array
 		incrementVariable(); // function that adds '1' to the 'i' variable each time it's ran (function set above)
 	} while (array.length > 0 && i < 5); // while the length of the array is greater than zero AND less than 5
