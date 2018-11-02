@@ -40,3 +40,7 @@ function incrementVariable() {
 
 	return array;
 }
+
+
+// PERSONAL NOTES: This Lab is solved! Turns out that the console.log part of the code was for debugging purposes
+// like Ian Valentine told me! After some trial and error or erasing/adding/editing code, it at least works! Haha!
