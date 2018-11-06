@@ -1,42 +1,54 @@
 function forLoop(array) {
-  for(var i = 0; i < 25; i++) {
-    if (i === 0) {
-      array.unshift("I am 1 strange loop.");
+  for (var i = 0; i < 25; i++) {
+    if (i === 1) {
+    array.push("I am 1 strange loop.");
     }
     else {
-      array.unshift(`I am ${i} strange loop.`);
+     array.push(`I am ${i} strange loops.`);
     }
   }
   return array;
 }
 
-
 function whileLoop(number) {
-  while(number > 0) {
-    console.log(number--);
+  while (number > 0) {
+    console.log(--number);
   }
-  return "done";
+  return 'done';
 }
-
 
 function doWhileLoop(array) {
-  var i = 0;
- 
-function incrementVariable() {
- i = i + 1;
-}
-do {
-  array.shift();
-}
-while(array.length > 0 && incrementVariable());
-return array;
-}
-
+  var i = 1;
   
-
+  function incrementVariable() {
+    i = i + 1;
+  }
+  
+  do {
+    array.pop();
+  }
+  while (array.length > 0 && incrementVariable());
+  return array;
+}
 
 /*
-describe('forLoop(array)', () => {
+function makeArray() {
+  const array = []
+  const t = Math.floor(Math.random() * 10)
+
+  for (let i = 0; i < t; i++) {
+    array.push("I am a strange loop.")
+  }
+
+  return [array, t]
+}
+
+describe('loops', () => {
+  jsdom({
+    src: fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
+  })
+
+  describe('forLoop(array)', () => {
     it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
