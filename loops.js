@@ -1,8 +1,10 @@
 function forLoop(array) {
-  if array.length = 2
+  if (array.length = 2) {
     array.push(`I am 1 strange loop.`)
-  else
+  else {
     array.push(`I am ${array.length} strange loops.`)
+  }
+  }
   return array
 }
 
