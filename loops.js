@@ -11,25 +11,25 @@ function forLoop(array) {
 }
 
 function whileLoop(n) {
-    while (n > 0) {
-        console.log(--n);
+    let countdown = n;
+
+    while (countdown > 0) {
+        console.log(--countdown);
       }
 
     return "done";
 }
 
 function doWhileLoop(array) {
-    var i = 0;
-
     function incrementVariable() {
-        i = i + 1;
+      var i = 0;
+      var i = i + 1;
     }
 
     do {
-        console.log('array.length = ' + array.length + ' and i = ' + i);
-        array = array.slice(1);
-        incrementVariable();
-    } while (array.length > 0 && i < 5);
+      array.pop();
+
+    } while (array.length > 0);
 
     return array;
 }
