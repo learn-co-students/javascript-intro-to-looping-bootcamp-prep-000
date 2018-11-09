@@ -21,15 +21,15 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(array) {
-    function incrementVariable() {
-      var i = 0;
-      var i = i + 1;
+  var i = 0;
+  function incrementVariable() {
+    var i = i + 1;
     }
 
-    do {
-      array.pop();
+  do {
+    array.pop();
 
-    } while (array.length > 0);
+  } while (array.length > 0 && i < 5);
 
     return array;
 }
