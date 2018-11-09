@@ -14,5 +14,17 @@ function whileLoop (n) {
   while(n > 0) {
     console.log(--n)
   }
-  return console.log('done')
+  return "done"
+}
+
+function doWhileLoop(array) {
+  do {
+    array.pop()
+  } while (array.length > 0 && incrementVariable())
+  return array
+}
+
+function incrementVariable() {
+  var i = 0
+  i = i++;
 }
