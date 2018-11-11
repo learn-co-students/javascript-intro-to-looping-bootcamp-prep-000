@@ -27,6 +27,7 @@ function doWhileLoop(arr){
   function incrementVariable() {
     i = i + 1;
   }
+
   let i = 0;
   do {
     arr.pop();
