@@ -17,7 +17,17 @@ function whileLoop(number) {
   return 'done';
 }
 
-
+function doWhileLoop(array) {
+  var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
+}
+do {
+  array.pop();
+} while (array.length > 0 && incrementVariable());
+return array;
+}
 
 /*
 for (let i = 0; i < t; i++) {
