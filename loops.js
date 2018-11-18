@@ -36,6 +36,7 @@ function whileLoop(num){
 //run console.log to test the function
 //console.log(whileLoop(8));
 
+//test array
 names = ["Andrew", "Anya", "Zara", "Carell"];
 
 var i = 0;
@@ -53,4 +54,5 @@ function doWhileLoop(myArray){
 	while (myArray.length > 0 && i < 3);
 }
 
+//test the loop
 doWhileLoop(names);
