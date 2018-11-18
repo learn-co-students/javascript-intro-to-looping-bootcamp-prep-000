@@ -49,7 +49,6 @@ function doWhileLoop(myArray){
 	do {
 		myArray.pop();
 		incrementVariable();
-		console.log(myArray);
 	}
 	while (myArray.length > 0 && i < 3);
 }
