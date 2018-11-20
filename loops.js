@@ -33,3 +33,5 @@ do {
 } while (array.length > 0 && incrementVariable())
 return array;
 }
+
+// Adding comments in order to submit properly
