@@ -53,8 +53,8 @@ function incrementVariable(){
 function doWhileLoop(myArray){
 	do {
 		myArray.pop();
-		incrementVariable();
-} while (myArray.length > 0 && incrementVariable());
+		i++;
+} while (myArray.length > 0);
 }
 
 //test the loop
