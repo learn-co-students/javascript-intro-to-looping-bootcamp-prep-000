@@ -1,12 +1,13 @@
-var number = 25; 
+function doWhileLoop(x) {
+  console.log("wtf"); 
+}
 
-function whileLoop(number){
-  while (number > 0) {
-    console.log(number--); 
-  }
-  if (number == 0){
-    console.log("Done.")
-  }
-}  
+var i = 0;
 
-whileLoop(25); 
+do {
+  console.log(i); 
+  doWhileLoop(i++); 
+} while (i<5); 
+
+var x = [3, 5, 5];
+doWhileLoop(x); 
