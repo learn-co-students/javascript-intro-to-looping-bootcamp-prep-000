@@ -5,20 +5,20 @@
 //else, add the string "I am ${i} strange loops.". (Remember flow
 //control with if and else? And how do we interpolate i?) Then return the array.
 
-myArray = [];
-
 function forLoop(someArray){
 	for (let i = 0; i < 25; i++){
 		if (i === 1) {
-			myArray.push(`This is a 1 strange loop.`)
+			someArray.push(`I am 1 strange loop.`)
 		}
 		else {
-			myArray.push(`This is a ${i} strange loops.`)
+			someArray.push(`I am ${i} strange loops.`)
 		}
 	}
-	return myArray;
+	return someArray;
 }
 
+//initialize blank array
+//const myArray = [];
 //run console.log to test the function
 //console.log(forLoop(myArray));
 
@@ -36,8 +36,13 @@ function whileLoop(num){
 //run console.log to test the function
 //console.log(whileLoop(8));
 
+//structure of do-while loop
+//do {
+//  [loopBody];
+//} while ([condition]);
+
 //test array
-names = ["Andrew", "Anya", "Zara", "Carell"];
+//names = ["Andrew", "Anya", "Zara", "Carell"];
 
 var i = 0;
 
@@ -49,9 +54,8 @@ function doWhileLoop(myArray){
 	do {
 		myArray.pop();
 		incrementVariable();
-	}
-	while (myArray.length > 0 && i < 3);
+} while (myArray.length > 0 && incrementVariable());
 }
 
 //test the loop
-doWhileLoop(names);
+//doWhileLoop(names);
