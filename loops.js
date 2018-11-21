@@ -42,20 +42,16 @@ function whileLoop(num){
 //} while ([condition]);
 
 //test array
-//names = ["Andrew", "Anya", "Zara", "Carell"];
-
-var i = 0;
-
-function incrementVariable(){
-	i = i + 1;
-}
+//names = ["Andrew", "Anya", "Zara", "Carell", "Nadia"];
 
 function doWhileLoop(myArray){
-  do {
+	var i = 0;
+	do {
 		myArray.pop();
-		incrementVariable();
-} while (myArray.length > 0);
+		i++;
+	} while (myArray.length > 0);
+	return myArray;
 }
 
-//test the loop
-//doWhileLoop(names);
+// test the loop
+//console.log(doWhileLoop(names));
