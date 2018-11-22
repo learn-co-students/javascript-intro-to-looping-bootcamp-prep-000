@@ -15,10 +15,11 @@ function whileLoop(num){
   return 'done';
 }
 
+
 function doWhileLoop(arr){
   do {
     delete arr[i]
-  } while (arr.length > 0 && incrementVariable())
+  } while (arr.length > 0)
 }
 
 
