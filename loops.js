@@ -20,7 +20,13 @@ function whileLoop(n) {
   
   function doWhileLoop (array) {
     function maybeTrue() {
-      return array;
+      
+      
+      //JUST FOUND THIS LINE AND STILL FIGURING OUT THE EXACT REASON WHY IT WORKS WELL
+      //*********************************************************
+     return Math.random() >= 0.5
+      //*********************************************************
+      
     }
     
    do {
