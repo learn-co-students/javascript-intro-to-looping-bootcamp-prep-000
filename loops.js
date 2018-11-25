@@ -21,12 +21,9 @@ function whileLoop(n) {
   function doWhileLoop (array) {
     function maybeTrue() {
       
-      
-      //JUST FOUND THIS LINE AND STILL FIGURING OUT THE EXACT REASON WHY IT WORKS WELL
-      //*********************************************************
+    
      return Math.random() >= 0.5
-      //*********************************************************
-      
+      return array;
     }
     
    do {
