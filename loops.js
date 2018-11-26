@@ -3,7 +3,7 @@ function forLoop(array) {
     if(i === 1) {
       array.push("I am 1 strange loop.");
     }
-    else {
+    else{
       array.push(`I am ${i} strange loops.`);
     }
   }
@@ -11,8 +11,7 @@ function forLoop(array) {
 }
 
 function whileLoop(number) {
-  while (number > 0) 
-  {
+  while(number > 0) {
     console.log(--number);
   }
   return "done";
@@ -25,8 +24,8 @@ function incrementVariable() {
   i = i + 1;
 }
 
-do {
-  array.shift();
+do{
+  array.pop();
 }
 while(array.length > 0 && incrementVariable());
 return array;
