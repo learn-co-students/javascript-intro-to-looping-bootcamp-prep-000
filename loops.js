@@ -12,19 +12,18 @@ function forLoop(array) {
 
 function whileLoop(n) {
   while (n > 0) {
-    console.log(--n)
+    console.log(--n);
   }
   return "done";
 }
 
+function doWhileLoop(array) {
 var i =0;
 function incrementVariable() {
   i = i + 1;
-}
-
-function doWhileLoop(array) {
+   }
   do {
-    array.pop();
+   array = array.slice(1);//array.pop/
   }
   while (array.length > 0 && incrementVariable());
   return array;
