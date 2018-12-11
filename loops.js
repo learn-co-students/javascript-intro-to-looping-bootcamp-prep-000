@@ -9,3 +9,10 @@ function forLoop(array) {
 }
 return array // has to be outside of for loop; when inside for loop, loop stops once hitting return
 }
+
+function whileLoop(n) {
+   while (n > 0) {
+   console.log(--n);
+  }
+return "done"
+}
