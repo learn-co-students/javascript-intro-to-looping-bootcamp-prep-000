@@ -22,8 +22,8 @@ wrapping them as a function. We could, of course, write the following code:
 ```javascript
 var gifts = ["teddy bear", "drone", "doll"];
 
-function wrapGift(gift) {
-  console.log(`Wrapped ${gift} and added a bow!`);
+function wrapGift(gifts) {
+  console.log(`Wrapped ${gifts} and added a bow!`);
 }
 ```
 
