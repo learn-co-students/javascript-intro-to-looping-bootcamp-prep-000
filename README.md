@@ -228,3 +228,14 @@ wrapping one gift after another.
 - [MDN - Do-While Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-intro-to-looping'>Javascript Intro To Looping</a> on Learn.co and start learning to code for free.</p>
+
+
+
+    \\\\\var array = [i]
+    \\\\\if (array === 1) {
+      \\\\\console.log("I am 1 strange loop.");}
+      \\\\else {
+        \\\\console.log(`I am ${array} strange loops.`) }
+   \\\\ }
+  \\\\\\return i;
+}
