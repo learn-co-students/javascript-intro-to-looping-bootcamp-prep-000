@@ -26,7 +26,7 @@ function doWhileLoop(array) {
  function incrementVariable() {
      i = i + 1;
     }
- //the above four lines copied from read me
+
 do {
   array.pop();
   incrementVariable();
