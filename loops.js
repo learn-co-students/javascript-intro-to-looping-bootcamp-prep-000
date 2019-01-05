@@ -18,7 +18,6 @@ let countdown = n
 }
 
 function doWhileLoop(array) {
-
 let i = 0 
 
 function incrementVariable() {
