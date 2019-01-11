@@ -10,6 +10,27 @@ function forLoop(array) {
   return array;
 }
 
+function whileLoop(number) {
+  while(number > 0) {
+   console.log(number);
+   number--;
+  }
+  return 'done';
+}
+
+function doWhileLoop(array) {
+  var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
+}
+do{
+  array.shift();
+  incrementVariable();
+} while(array.length > 0 && incrementVariable());
+return array;
+}
+
 /*
 for (let i = 0; i < t; i++) {
     array.push("I am a strange loop.")
