@@ -30,6 +30,14 @@ describe('loops', () => {
     it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
+      function forLoop(array){
+  for (let i = 0; i < 25; i++) 
+    if (i == 1){
+      i = ("I am a strange loop.")}
+  else 
+    {i = "I am" +i+ "strange loops";} 
+      return (array)
+}
 
       expect(strangeArray.length).to.equal(t + 25)
 
