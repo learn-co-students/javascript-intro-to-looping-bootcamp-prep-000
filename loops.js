@@ -1,17 +1,18 @@
 function forLoop(array){
-  for(var i = 0; i <25; i++){
+  for(var i = 0; i<25; i++){
     if (i === 1){
       array.push(`I am ${i} strange loop.`)
-    } else {
+      } else {
       array.push(`I am ${i} strange loops.`)
-  }
-}
-return array
+      }
+    }
+  return array
 }
 
-function whileLoop(n){
-  while(n>0)
-  {console.log(n--)}
+function whileLoop(num){
+  while (num > 0){
+    console.log(num--)
+  }
   return "done"
 }
 
