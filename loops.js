@@ -15,11 +15,27 @@ function forLoop(array) {
 return array
 }
 
-
+let n= Math.floor(Math.random() * 100)+99;
 function whileLoop(n){
- n= 100
-  while(n) {
+
+
+while (n)
    console.log(--n)
-  }  
-  return  ("done")
+
+  return  "done"
+
+
 }
+
+let array =[1,2,3,4,6];
+const l = array.length
+
+ function doWhileLoop(array){
+l=l-1;
+ }
+  do{
+    doWhileLoop(array);
+
+  }
+
+  while(array.length>0);
