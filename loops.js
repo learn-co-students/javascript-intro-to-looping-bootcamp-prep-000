@@ -15,7 +15,7 @@ function forLoop(array) {
 return array
 }
 
-let n= Math.floor(Math.random() * 100)+99;
+let n= Math.floor(Math.random() * 100);
 function whileLoop(n){
 
 
@@ -27,15 +27,16 @@ while (n)
 
 }
 
-let array =[1,2,3,4,6];
-const l = array.length
 
- function doWhileLoop(array){
-l=l-1;
- }
+ var array=[];
+ array.length=n;
+function doWhileLoop(array){
+n=n-1;
+
+}
   do{
-    doWhileLoop(array);
+   return (--array) 
+    
+  
+  }while (array.length>0 && incrementVariable())
 
-  }
-
-  while(array.length>0);
