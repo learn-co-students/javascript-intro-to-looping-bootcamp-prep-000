@@ -30,13 +30,14 @@ while (n)
 
  var array=[];
  array.length=n;
+ 
 function doWhileLoop(array){
-n=n-1;
-
+ new Array().length=n-1;
+ return Array;
 }
   do{
-   return (--array) 
+   console.log (doWhileLoop(array)) ;
     
   
-  }while (array.length>0 && incrementVariable())
+  }while (array.length>0 && incrementVariable());
 
