@@ -27,7 +27,7 @@ describe('loops', () => {
   })
 
   describe('forLoop(array)', () => {
-    it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
+    console.log('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
       const testArray = strangeArray.slice(array.length)
@@ -42,7 +42,7 @@ describe('loops', () => {
   })
 
   describe('whileLoop(n)', () => {
-    it('counts down from n to 0', () => {
+    console.log('counts down from n to 0', () => {
       const spy = chai.spy.on(console, 'log')
       const n = Math.floor(Math.random() * 100)
 
@@ -54,7 +54,7 @@ describe('loops', () => {
   })
 
   describe('doWhileLoop(array)', () => {
-    it('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
+    console.log('removes elements from `array` until `array` is empty or until `incrementVariable()` returns `false`', () => {
       const [array, t] = makeArray()
       const l = array.length
 
