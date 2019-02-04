@@ -18,14 +18,14 @@ function whileLoop(num) {
     
 }
 
-function doWhileLoop(array) {
+function doWhileLoop(num) {
   var i=0; 
   function incrementVariable() {
   i = i + 1;
 }
   do {
-    array.pop()
-  } while ( array.length > 0 && incrementVariable() );
-  return array;
+    console.log("I run once regardless");
+  } 
+  while (incrementVariable() < num );
   
 }
