@@ -13,12 +13,8 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(n) {
-  if(n===0) {
+  do {
     console.log("I run once regardless.");
-  } else {
-    while(n>0) {
-      console.log("I run once regardless.");
-      n--;
-    }
-  }
+    n--;
+  } while(n>0);
 }
