@@ -33,11 +33,11 @@ describe('loops', () => {
       const testArray = strangeArray.slice(array.length)
 
       let first = "I am 1 strange loop."
-      let rest = "I am 24 strange loops."
+      let rest = "I am 25 strange loops."
 
       expect(strangeArray[11]).to.equal(first)
-      expect(strangeArray[34]).to.equal(rest)
-      expect(strangeArray.length).to.equal(t + 25)
+      expect(strangeArray[35]).to.equal(rest)
+      expect(strangeArray.length).to.equal(t + 26)
     })
   })
 
