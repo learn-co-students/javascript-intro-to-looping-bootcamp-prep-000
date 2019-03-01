@@ -2,33 +2,33 @@ function forLoop(array) {
   for (var i = 0; i < 25; i++)
   {
     if (i === 1) {
-      array.push("I am " + i + " strange loop.")
+      array.push("I am " + i + " strange loop.");
     } else {
-      array.push("I am " + i + " strange loops.")
+      array.push("I am " + i + " strange loops.");
     }
   }
-  return array
+  return array;
 }
 
 function whileLoop(num) {
   while (num > 0) {
-    console.log(--num)
+    console.log(--num);
   }
-  return ('done')
+  return ('done');
 }
 
 function doWhileLoop(int) {
   do {
-    console.log("I run once regardless.")
-  } while (--int > 0)
+    console.log("I run once regardless.");
+  } while (--int > 0);
 }
 
 function worseWhileLoop(int) {
-  var i = 0
+  var i = 0;
   function incrementVariable() {
-    i = i + 1
-    return i
+    i = i + 1;
+    return i;
   } do {
-    console.log("I run once regardless.")
+    console.log("I run once regardless.");
   } while (incrementVariable() < int);
 }
