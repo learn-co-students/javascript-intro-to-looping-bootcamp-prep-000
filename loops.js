@@ -20,31 +20,16 @@ function whileLoop(n) {
 
 //this next one is the one thats giving me trouble 
 
-//var num = 0;
-//function doWhileLoop(num) {
-  //function incrementVariable() {
-      //num = num + 1;
-      //return num;
-  //} do {
-    //console.log("I run regardless")
-     //} while (incrementVariable() < num);
-//}
-
-var num = 0;
-function doWhileLoop(num) {
-  function incrementVariable() {
-    for (let num = 0; num >= 10; num++) {
-      if (num === 0) {
-      console.log("i run once regardless")
-     } else { 
-        do {
-          console.log ("I run once regardless");
-          } while (incrementVariable() < num);
-      }
-    }
-  }
+function incrementVariable() {
+  i = i + 1;
+  return i;
 }
-
-
-
+function doWhileLoop(num) {
+  do {
+    var int = int++;
+  console.log ("I run once regardless");
+    } while (incrementVariable() < num) {
+  }
+  return int;
+}
 
