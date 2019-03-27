@@ -6,7 +6,6 @@ function forLoop(array) {
 			array.push(`I am ${i} strange loops.`);
 		}
 	}
-
 	return array;
 }
 
@@ -27,8 +26,7 @@ function doWhileLoop(array) {
 
 	do {
 		console.log('array.length = ' + array.length + ' and i = ' + i);
-		array = array.slice(1);
-		incrementVariable();
+		
 	} while (array.length > 0 && i < 5);
-	return array; 
+	return array;
 }
