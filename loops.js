@@ -1,7 +1,7 @@
 function forLoop(array) {
 	for (let i = 0; i < 25; i++) {
 		if (i === 1) {
-			array.push('I am 1 strange loop.');
+			array.push(`I am 1 strange loop.`);
 		} else {
 			array.push(`I am ${i} strange loops.`);
 		}
@@ -20,7 +20,7 @@ function whileLoop(n) {
 
 function doWhileLoop(array) {
 	var i = 0;
-
+	
 	function incrementVariable() {
 		i = i + 1;
 	}
@@ -30,6 +30,5 @@ function doWhileLoop(array) {
 		array = array.slice(1);
 		incrementVariable();
 	} while (array.length > 0 && i < 5);
-
-	return array;
+	return array; 
 }
