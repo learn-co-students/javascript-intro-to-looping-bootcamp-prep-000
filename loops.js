@@ -13,3 +13,23 @@ function forLoop(array){
   }
   return(array) // you must return the answer by calling the argument / object. In this case array. 
 }
+
+function whileLoop(number){
+  while(number > 0) {
+    console.log(--number);
+  }
+  return ('done')
+}
+
+function doWhileLoop(num){
+  var i = 0;
+  
+  function incrementVariable(){
+    i = i + 1;
+    return i;
+  }
+    do {
+    console.log("I run once regardless.")
+      
+    } while (incrementVariable() < num)
+}
