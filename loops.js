@@ -14,9 +14,9 @@ function forLoop(array){
   return(array) // you must return the answer by calling the argument / object. In this case array. 
 }
 
-function whileLoop(number){
-  while(number > 0) {
-    console.log(--number);
+function whileLoop(num){
+  while(num > 0) {
+    console.log(--num);
   }
   return ('done')
 }
@@ -31,6 +31,8 @@ function doWhileLoop(num){
     do {
     console.log("I run once regardless.")
       
-    } while (incrementVariable() < num) // if num is greater than incrementVariable() it will step through one more time. so while (incrementVariable() <= num) would go one more loop. Corect // this by incrementVariable() < num) which will stop the increment at the exact value of num instead of incrementing one more iteration.
+    } while (incrementVariable() < num) 
+    // if num is greater than incrementVariable() it will step through one more time. so while (incrementVariable() <= num) would go one more loop. Corect 
+    // this by incrementVariable() < num) which will stop the increment at the exact value of num instead of incrementing one more iteration.
 }
 
