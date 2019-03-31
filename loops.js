@@ -33,3 +33,4 @@ function doWhileLoop(num){
       
     } while (incrementVariable() < num) // if num is greater than incrementVariable() it will step through one more time. so while (incrementVariable() <= num) would go one more loop. Corect // this by incrementVariable() < num) which will stop the increment at the exact value of num instead of incrementing one more iteration.
 }
+
