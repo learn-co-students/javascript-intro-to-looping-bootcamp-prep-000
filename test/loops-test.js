@@ -1,4 +1,4 @@
-/*global describe, it*/
+ /*global describe, it*/
 
 const chai = require('chai')
 const fs = require('fs')
