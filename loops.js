@@ -6,7 +6,9 @@ function forloop(array) {
 
 let countdown = 100
 function whileLoop(n > 0) {
-  console.log(--countdown);
+  while (countdown > 0) {
+    console.log(--countdown);
+  }
 }
 
 function doWhileLoop(num) {
