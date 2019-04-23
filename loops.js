@@ -7,3 +7,7 @@ let countdown = 100
 function whileLoop (countdown > 0) {
   console.log(--countdown);
 }
+
+function doWhileLoop(num) {
+
+}
