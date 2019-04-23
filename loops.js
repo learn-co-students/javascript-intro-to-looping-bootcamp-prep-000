@@ -4,14 +4,18 @@ function forloop(array) {
   }
 }
 
-let countdown = 100
+let countdown = n
 function whileLoop(n > 0) {
   while (countdown > 0) {
-    console.log(--countdown);
+    console.log("Done");
   }
 }
 
+var i= 0;
 function doWhileLoop(num) {
+  i = i + 1;
+  return i;
+}
   do {
     console.log("I run once regardless.")
   }
