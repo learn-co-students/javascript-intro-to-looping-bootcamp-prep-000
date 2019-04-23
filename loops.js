@@ -5,11 +5,10 @@ function forLoop(array) {
   return array
 }
 
-/*
 let countdown = n
-function whileLoop(n > 0); {
+function whileLoop(n > 0) {
   while (countdown > 0) {
-    console.log("Done");
+    return("Done")
   }
 }
 
