@@ -1,6 +1,7 @@
 function forloop(array) {
-  let (i = 0; i < array.length; i++)
-    console.log("I am " + i + " strange loop");
+  for (let i = 0; i < array.length; i++)
+    {console.log("I am ${i} strange loop${i === 0 ? '' : 's'}.");
+  }
 }
 
 let countdown = 100
