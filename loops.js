@@ -11,25 +11,9 @@ function whileLoop(n) {
   return("Done")
 }
 
-function doWhileLoop(num); {
-  var i= 0;
-  i = i + 1;
-  return i;
-}
+function doWhileLoop(num) {
   do {
     console.log("I run once regardless.");
   }
   while (incrementVariable() < 1);
 }
-
-function doWhileLoop(num); {
-  var i= 0;
-  i = i + 1;
-  return i;
-}
-  do {
-    console.log("I run once regardless.");
-  }
-  while (incrementVariable() < 10);
-}
-*/
