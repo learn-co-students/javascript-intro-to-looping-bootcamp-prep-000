@@ -1,9 +1,9 @@
-function forloop(array); {
-  for (let i = 0; i < array.length; i++)
-    {console.log(`I am ${i} strange loop${i === 0 ? '' : 's'}.`);
+function forLoop(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(`I am ${i} strange loop.`);
   }
 }
-
+/*
 let countdown = n
 function whileLoop(n > 0); {
   while (countdown > 0) {
@@ -33,3 +33,4 @@ function doWhileLoop(num); {
   }
   while (incrementVariable() < 10);
 }
+*/
