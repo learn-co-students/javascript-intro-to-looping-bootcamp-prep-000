@@ -7,13 +7,20 @@ function forLoop(array) {
 
 function whileLoop(n) {
   while (n > 0) {
+    console.log(n--)
   }
-  return("Done")
+  return("done")
 }
 
+
 function doWhileLoop(num) {
+  var i = 0;
+  function incrementVariable() {
+    i = i + 1;
+    return i;
+  }
   do {
     console.log("I run once regardless.");
   }
-  while (incrementVariable() < 1);
+  while (incrementVariable() < num);
 }
