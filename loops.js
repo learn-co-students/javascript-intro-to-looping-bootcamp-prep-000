@@ -5,7 +5,7 @@ function forloop(array) {
 }
 
 let countdown = 100
-whileLoop(countdown > 0) {
+function whileLoop(n > 0) {
   console.log(--countdown);
 }
 
