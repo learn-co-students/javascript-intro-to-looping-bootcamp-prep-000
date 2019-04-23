@@ -5,15 +5,14 @@ function forLoop(array) {
   return array
 }
 
-let countdown = n
-function whileLoop(n > 0) {
-  while (countdown > 0) {
-    return("Done")
+function whileLoop(n) {
+  while (n > 0) {
   }
+  return("Done")
 }
 
-var i= 0;
 function doWhileLoop(num); {
+  var i= 0;
   i = i + 1;
   return i;
 }
@@ -23,9 +22,8 @@ function doWhileLoop(num); {
   while (incrementVariable() < 1);
 }
 
-
-var i= 0;
 function doWhileLoop(num); {
+  var i= 0;
   i = i + 1;
   return i;
 }
