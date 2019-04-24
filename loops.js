@@ -18,19 +18,17 @@ function whileLoop(n) {
     return "done";
   }
   
-  function maybeTrue() {
-  return Math.random() >= 0.5;
-  }
-  
   function doWhileLoop(num){
     var i = 0;
-    do {
-  console.log("I run once regardless.");
-  } while (incrementVariable() < num);
-}
+    do{
+      console.log("I run once regardless.");
+      i++;
+    } while (i < 0);
+    
+  }
+  
 
-/*/*
-  describe('doWhileLoop(num)', () => {
+/*/* describe('doWhileLoop(num)', () => {
     it ('console logs "I run once regardless." 1 time when passed an integer of 0 as a parameter.', () => {
         const spy = chai.spy.on(console, 'log');
         doWhileLoop(0);
@@ -43,4 +41,5 @@ function whileLoop(n) {
       expect(spy).to.have.been.called.exactly(10);
     })
   })
-})*/
+})
+*/
