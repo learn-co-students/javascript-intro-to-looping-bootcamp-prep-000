@@ -194,7 +194,7 @@ function incrementVariable() {
 
 do {
   console.log("doo-bee-doo-bee-doo");
-} while (incrementVariable() < 5);
+} while (incrementVariable(0) < 5);
 ```
 
 Remember how we couldn't be sure with the plain `while` loop above that the body
