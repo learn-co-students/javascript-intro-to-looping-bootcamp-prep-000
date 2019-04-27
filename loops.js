@@ -11,3 +11,11 @@ if (i === 1) {
   }
   return array.slice();
 } 
+
+function whileLoop(n) {
+    let countdown = n+1;
+  while (countdown > 1) {
+    console.log(--countdown);
+  }
+  return "done";
+}
