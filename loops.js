@@ -19,3 +19,16 @@ function whileLoop(n) {
   }
   return "done";
 }
+function doWhileLoop(num) {
+  function incrementVariable() {
+  num = num + 1;
+  return num;
+}
+  do { if (num === 10){
+    for (let i = 0; i < 10; i++) {
+console.log("I run once regardless.");
+}} else {
+  console.log("I run once regardless.");
+}
+} while (incrementVariable() < num);
+}
