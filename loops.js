@@ -3,30 +3,32 @@ function forLoop(array) {
     if (i === 1) {
       array.push("I am 1 strange loop.")
     } else {
-      array.push("I am ${i} strange loops.")
+      array.push("I am " + i + " strange loops.")
     }
   }
   return array;
 
 }
 
-function whileLoop(number) {
-  let countdown = number;
+function whileLoop(n) {
+  let countdown = n;
 
   while (countdown > 0) {
-  console.log(--countdown);
+    console.log(countdown);
+    countdown--;
 }
-  console.log('done');
+  return 'done';
 }
 
 var i = 0
 
-function doWhileLoop(num) {
+function incrementVariable() {
   i = i + 1;
   return i;
 }
 
+function doWhileLoop(num) {
 do {
   console.log("I run once regardless.");
-} while (incrementVariable() < num);
+} while (incrementVariable() <= num);
 }
