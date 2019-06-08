@@ -10,15 +10,20 @@ function forLoop(array){
 }
 
 function whileLoop (n) {
-  let countdown=50;
-  while(countdown>0){
-    console.log(--countdown)
-    if(n===0){ 
-      n.push('done')}
-  }
-  return n
-  }
-function doWhileLoop(num) {
+  while(n>0){
+   console.log(--n);}
+  return 'done'
+}
   
+function doWhileLoop(num) {
+  var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
+  return i;
+}
+do {
+  console.log("I run once regardless");
+} while (incrementVariable() < num);
   
 }
