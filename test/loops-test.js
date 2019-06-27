@@ -12,7 +12,7 @@ const expect = chai.expect
 
 function makeArray() {
   const array = []
-  const t = 10
+  const t = 0
 
   for (let i = 0; i < t; i++) {
     array.push("I am a strange loop.")
@@ -35,8 +35,8 @@ describe('loops', () => {
       let first = "I am 1 strange loop."
       let rest = "I am 24 strange loops."
 
-      expect(strangeArray[11]).to.equal(first)
-      expect(strangeArray[34]).to.equal(rest)
+      expect(strangeArray[1]).to.equal(first)
+      expect(strangeArray[24]).to.equal(rest)
       expect(strangeArray.length).to.equal(t + 25)
     })
   })
