@@ -19,7 +19,7 @@ function forLoop(array){
 
  function doWhileLoop(num){
   function maybeTrue() {
-    num = Math.random() >= 0.5
+    num--
     return num
 }
 do{
