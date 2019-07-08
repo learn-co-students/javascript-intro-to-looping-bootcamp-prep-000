@@ -8,7 +8,7 @@ function forLoop(array){
   }
   return array
 }
-forLoop([], 25)
+forLoop([])
 
  function whileLoop(number){
   while(number > 0){
