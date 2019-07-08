@@ -1,4 +1,3 @@
-'use strict'
 const array = []
 function forLoop(array){
   for (let i = 0; i < 25; i++){
@@ -11,23 +10,23 @@ function forLoop(array){
   return array
 }
 
-function whileLoop(number){
+ function whileLoop(number){
   while(number > 0){
     console.log(--number);
   }
   return "done";
 }
 
-function doWhileLoop(array){
+ function doWhileLoop(num){
   function maybeTrue() {
-    return Math.random() >= 0.5
+    num = Math.random() >= 0.5
+    return num
 }
 do{
-  array.pop();
+  console.log('I run once regardless.')
 }
-while (array.length > 0 && maybeTrue()){
-  return array
+while (num > 0 && maybeTrue()){
+  return num
   }
 }
-
-doWhileLoop([1,2,3,4,5])
+ doWhileLoop(10)
