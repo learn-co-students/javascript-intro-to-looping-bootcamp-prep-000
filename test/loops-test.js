@@ -1,40 +1,69 @@
-function forLoop(array) {
-   for ( let i = 0; i < 25; i++) {
-     if (i === 1) {
-       array.push(`I am 1 strange loop.`)
-     } else {
-       array.push(`I am ${i} strange loops.`)
-     }
+/*global describe, it*/
+
+const chai = require('chai')
+const fs = require('fs')
+const jsdom = require('mocha-jsdom')
+const path = require('path')
+const spies = require('chai-spies')
+
+chai.use(spies)
+
+const expect = chai.expect
+
+function makeArray() {
+  const array = []
+  const t = 10
+
+  for (let i = 0; i < t; i++) {
+    array.push("I am a strange loop.")
   }
-  return array;
+
+  return [array, t]
 }
 
-function whileLoop(number) {
+describe('loops', () => {
+  jsdom({
+    src: fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
+  })
 
-    while (number > 0) {
-      console.log(--number)
-    }
-    return "done";
-  }
+  describe('forLoop(array)', () => {
+    it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
+      const [array, t] = makeArray()
+      const strangeArray = forLoop(array)
+      const testArray = strangeArray.slice(array.length)
 
-  /*
-  function whileLoop(number) {
-  let countdown = number;
+      let first = "I am 1 strange loop."
+      let rest = "I am 24 strange loops."
 
-  while (countdown > 0) {
-    console.log(--countdown);
-  }
-    return "done";
-}
-*/
+      expect(strangeArray[11]).to.equal(first)
+      expect(strangeArray[34]).to.equal(rest)
+      expect(strangeArray.length).to.equal(t + 25)
+    })
+  })
 
-function doWhileLoop(array) {
- function maybeTrue(){
-   return Math.random() >= 0.5
-}
+  describe('whileLoop(n)', () => {
+    it('counts down from n to 0', () => {
+      const spy = chai.spy.on(console, 'log')
+      const n = Math.floor(Math.random() * 100)
 
-do {
-  array.pop();
-} while (array.length > -1 && maybeTrue());
-  return array;
-}
+      expect(whileLoop(n)).to.equal('done')
+      expect(spy).to.have.been.called.exactly(n)
+
+      console.log.reset()
+    })
+  })
+
+  describe('doWhileLoop(num)', () => {
+    it ('console logs "I run once regardless." 1 time when passed an integer of 0 as a parameter.', () => {
+        const spy = chai.spy.on(console, 'log');
+        doWhileLoop(0);
+        expect(spy).to.have.been.called.exactly(1);
+    })
+
+    it ('console logs "I run once regardless." 10 times when passed an integer of 10 as a parameter.', () => {
+      const spy = chai.spy.on(console, 'log');
+      doWhileLoop(10);
+      expect(spy).to.have.been.called.exactly(10);
+    })
+  })
+})
