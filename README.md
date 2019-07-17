@@ -1,4 +1,4 @@
-onnn# JavaScript Loops
+justonnn# JavaScript Loops
 
 ## Objectives
 
