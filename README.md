@@ -1,4 +1,4 @@
-# JavaScript Loops
+hing the # JavaScript Loops
 
 ## Objectives
 
