@@ -6,7 +6,7 @@ const jsdom = require('mocha-jsdom')
 const path = require('path')
 const spies = require('chai-spies')
 
-chai.use(spies)
+chai.use(spies) 
 
 const expect = chai.expect
 
