@@ -36,15 +36,16 @@ function doWhileLoop(num){
   return 'done'
 }
 
-var num = 0;
- 
+var i = 0
 function doWhileLoop(num) {
-  num = num + 1;
+	var i = 0;
+
+	function incrementVariable() {
+		i = i + 1;
+    return i;
+	}
+
   do {
-   console.log("I run once regardless.");
-   } while (incrementVariable() {
-  i = i + 1;
-  return i;
+    console.log("I run once regardless.");
+  } while (incrementVariable() < num);
 }
-}
- 
