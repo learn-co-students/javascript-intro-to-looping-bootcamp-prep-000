@@ -27,7 +27,8 @@ function wrapGift(gift) {
 }
 ```
 
-We could then call `wrapGift()` on each gift individually:
+We could then call `wrapGift()` on each gift ind
+/vidually:
 
 ```javascript
 wrapGift(gifts[0]);
