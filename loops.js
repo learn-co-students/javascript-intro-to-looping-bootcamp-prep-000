@@ -39,9 +39,9 @@ function doWhileLoop(num) {
     return i;
   }
 
-do {
+  do {
   
-  console.log("I run once regadless.");
+    console.log("I run once regadless.");
   
-} while (incrementVariable() < num);
+  } while (incrementVariable() < num);
 }
