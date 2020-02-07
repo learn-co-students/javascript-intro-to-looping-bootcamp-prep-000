@@ -61,9 +61,9 @@ describe('loops', () => {
     })
 
     it ('console logs "I run once regardless." 10 times when passed an integer of 10 as a parameter.', () => {
-      const spy = chai.spy.on(console, 'log');
-      doWhileLoop(10);
-      expect(spy).to.have.been.called.exactly(10);
+        const spy = chai.spy.on(console, 'log');
+        doWhileLoop(10);
+        expect(spy).to.have.been.called.exactly(10);
     })
   })
 })
