@@ -1,21 +1,32 @@
-function forLoop(array){
-  for (let i = 0; i < 25; i++){
-    if (i===1) {
-      array.push('I am 1 strange loop.')
-    }
-    else {
-      array.push(`I am ${i} strange loop.`)
+function forLoop (array){
+  for(let i = 0;i< 25; i++){
+    if(i === 1){
+      array.push('I am 1 strange loop')
+    }else{
+      array.push(`I am ${i} strange loops`)
     }
   }
   return array
 }
 
-function whileLoop(n){
-  let countdown = n
-  while (countdown > 0){
-    console.log(--countdown)
+function whileLoop (n){
+  let countown = n
+  while (countown > 0){
+    console.log(--countown)
   }
   return 'done'
+}
+
+function doWhileLoop(num){
+  var i = 0
+  function incrementVariable() {
+  i ++;
+  return i;
+}
+ 
+do {
+  console.log("I run once regardless");
+} while (incrementVariable() < num);
 }
 
 function doWhileLoop(array){
