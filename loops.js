@@ -9,7 +9,7 @@ function forLoop (a = []) {
   }
   return a;
 }
-console.log(forLoop());
+forLoop();
 
 function whileLoop(n) {
   let countdown = n;
@@ -19,18 +19,18 @@ function whileLoop(n) {
     }
   return "done";
 }
-console.log(whileLoop());
+whileLoop();
 
 function doWhileLoop(num) {
-	let i = 0;
+  let i = 0;
 
-	do {
-		function incrementVariable() {
-			i = i + 1;
-			return i;
+  do {
+    function incrementVariable() {
+      i = i + 1;
+      return i;
 
-		}
-		console.log(`I run once regardless.`);
-	} while (incrementVariable() < num);
+    }
+    console.log(`I run once regardless.`);
+  } while (incrementVariable() < num);
 }
 doWhileLoop();
