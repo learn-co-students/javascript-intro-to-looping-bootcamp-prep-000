@@ -11,6 +11,7 @@ function forLoop(array){
 function whileLoop(){
   var num =100
   while(num>0){
-    console.log(num)
+    if (num===0){
+    console.log("Done")}else{console.log(--num)}
   }
 }
