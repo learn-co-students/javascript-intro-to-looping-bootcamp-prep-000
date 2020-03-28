@@ -8,10 +8,12 @@ function forLoop(array){
     }
     return array
 }
-function whileLoop(){
-  var num =100
-  while(num>0){
-    if (num===0){
-    console.log("Done")}else{console.log(--num)}
+
+function whileLoop(num){
+  num=10
+    while(num>0){
+    
+    console.log(--num)}
   }
+  return "Done"
 }
