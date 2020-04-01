@@ -9,24 +9,23 @@ function forLoop(array){
     return array
 }
 
-function whileLoop(num){
- 
-    while(num>0){
-    
-    console.log(--num)
-  }
-  return 'done'
+function whileLoop(n) {
+	while (n > 0) {
+		console.log(--n);
+	}
+
+	return 'done';
 }
- function doWhileLoop(num){
-   let num = 0;
- 
-function incrementVariable() {
-  ++num;
-  return i;
+
+function doWhileLoop(num) {
+	var i = 0;
+
+	function incrementVariable() {
+		++i 
+    return i;
+	}
+
+  do {
+    console.log("I run once regardless.");
+  } while (incrementVariable() < num);
 }
- 
-do {
-  console.log("I run once regardless.");
-} while (incrementVariable() < num);
- }
- 
