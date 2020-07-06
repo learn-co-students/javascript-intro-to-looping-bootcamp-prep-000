@@ -20,11 +20,10 @@ function whileLoop(n) {
 	return 'done';
 }
 function doWhileLoop(num){
+  let  i = 0
  do { 
+   i += 1
    console.log("I run once regardless");
- }while ( 0 > num ) {
-   console.log(num++)
- }
-
+ }while ( i < num );
 }
  
