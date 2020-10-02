@@ -11,7 +11,7 @@
 ## Introduction
 
 Sometimes, we need to do things repeatedly in life - our daily routines, for
-example. We wake up every morning. We got to work or school repeatedly. We
+example. We wake up every morning. We go to work or school repeatedly. We
 repeatedly decide what to watch next on YouTube/Netflix.
 
 In programming, we also often need to complete tasks repeatedly. Say we wanted
