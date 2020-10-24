@@ -10,11 +10,23 @@ function forLoop(array) {
   return array
 }
 
-function whileLoop(n) {
-  let countdown = n;
-
+function whileLoop(num) {
+  let countdown = num;
     while (countdown > 0) {
       console.log(--countdown)
     }
     return "done";
   }
+
+function doWhileLoop(n) {
+  let i = 0;
+
+  function incrementVariable() {
+    i = i + 1;
+    return i;
+  }
+
+  do {
+    console.log("I run once regardless")
+  } while (incrementVariable() < n)
+}
