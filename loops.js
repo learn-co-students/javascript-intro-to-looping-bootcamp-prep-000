@@ -10,8 +10,13 @@ function forLoop(arrayLoop) {
 
 
 function whileLoop(num) {
-  num = 1
-  while (num < 6) {
-    num += 1
-  }
+  num = 10
+  
+  return "done"
 }
+
+var num = 1
+while (whileLoop(> 0)) {
+    num -= 1
+    console.log(num)
+  }
