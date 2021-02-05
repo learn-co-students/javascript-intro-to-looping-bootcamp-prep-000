@@ -19,11 +19,11 @@ function whileLoop(num) {
 }
 
 function doWhileLoop(num) {
-  num += 1
-  return num
   do {
+    num += 1
     console.log("I sun once regardless")
-  } while (doWhileLoop() < 5)
+  } while (doWhileLoop(num < 5))
+    return num
 }
 
 // do {
