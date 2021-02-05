@@ -21,8 +21,11 @@ function whileLoop(num) {
 function doWhileLoop(num) {
   num += 1
   return num
+  do {
+    console.log("I sun once regardless")
+  } while (doWhileLoop() < 5)
 }
 
-do {
-  console.log("I sun once regardless")
-} while (doWhileLoop() < 5)
+// do {
+//  console.log("I sun once regardless")
+// } while (doWhileLoop() < 5)
