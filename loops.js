@@ -18,3 +18,11 @@ function whileLoop(num) {
   return "done"
 }
 
+function doWhileLoop(num) {
+  num += 1
+  return num
+}
+
+do {
+  console.log("I sun once regardless")
+} while (doWhileLoop() < 5)
