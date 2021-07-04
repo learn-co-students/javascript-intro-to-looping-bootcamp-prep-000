@@ -15,7 +15,7 @@ function makeArray() {
   const t = 10
 
   for (let i = 0; i < t; i++) {
-    array.push("I am a strange loop.")
+    array.push("I am 1 strange loop.")
   }
 
   return [array, t]
