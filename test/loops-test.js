@@ -40,6 +40,7 @@ describe('loops', () => {
       expect(strangeArray.length).to.equal(t + 25)
     })
   })
+  
 
   describe('whileLoop(n)', () => {
     it('counts down from n to 0', () => {
