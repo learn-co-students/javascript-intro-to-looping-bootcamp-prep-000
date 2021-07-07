@@ -22,8 +22,10 @@ function makeArray() {
 }
 
 describe('loops', () => {
+  const fsrc = fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
+  console.log(fsrc)
   jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
+    src: fsrc
   })
 
   describe('forLoop(array)', () => {
