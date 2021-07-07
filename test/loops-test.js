@@ -27,7 +27,7 @@ describe('loops', () => {
   })
 
   describe('forLoop(array)', () => {
-    it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
+    it('adds `"I am ${i} strange loop${i === 1 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
       const testArray = strangeArray.slice(array.length)
@@ -47,7 +47,7 @@ describe('loops', () => {
       const n = Math.floor(Math.random() * 100)
 
       expect(whileLoop(n)).to.equal('done')
-      expect(spy).to.have.been.called.exactly(n)
+      expect(spy).to.have.been.called.exactly(n + 1)
 
       console.log.reset()
     })
