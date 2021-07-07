@@ -189,7 +189,7 @@ for (let i = 1; i < 100; i++) {
 
 // The above prints:
 // Hello World the 1 time
-// Hello World the 2 time
+// Hello World the 2 time   
 // Hello World the 3 time
 ```
 
